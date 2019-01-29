@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  width: 100%;
+  border-bottom: 1px solid rgb(210, 210, 210);
+  background-color: rgb(255, 255, 255);
+}
+
+.nav-fixed {
+  position: fixed;
+}
+
+.drop-arrow {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  float: right;
+}
+
+li {
+  float: right;
+  font-size: 22px;
+}
+
+li a {
+  float: right;
+  color: rgb(30, 30, 30);
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+  color: rgb(28, 137, 246);
+}
+
+.name {
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+  font-size: 22px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  height: 900px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.introLeft {
+  display: inline-block;
+  width: 48%;
+  margin-top: 100px;
+  border-right: 1px solid rgb(210, 210, 210);
+}
+
+.pic {
+  text-align: center;
+  height: 600px;
+  width: 600px;
+  margin-left: 6%;
+  margin-right: 5%;
+  display: inline-block;
+  border-radius: 7px;
+  border: 1px solid rgb(175, 175, 175);
+}
+
+.introRight {
+  width: 48%;
+  margin-top: 100px;
+  float: right;
+}
+
+.introRight h1 {
+  border-bottom: 1px solid rgb(210, 210, 210);
+  padding: 20px;
+}
+
+.introRight p {
+  padding: 15px;
+  font-family: "Open Sans";
+  font-size: 22px;
+}
+
+.portfolio {
+  margin-top: 30px;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  padding: 20px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.portfolio-section {
+  width: 95%;
+  margin: auto;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  height: 600px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.portfolio-desc1and3 {
+  width: 48%;
+  margin-top: 100px;
+  float: right;
+}
+
+.portfolio-desc1and3 h1 {
+  border-bottom: 1px solid rgb(210, 210, 210);
+  padding: 20px;
+}
+
+.portfolio-desc1and3 p {
+  padding: 15px;
+  font-family: "Open Sans";
+  font-size: 22px;
+}
+
+.portfolio-pic1and3 {
+  display: inline-block;
+  width: 48%;
+  margin-top: 100px;
+}
+
+.demo-pic {
+  text-align: center;
+  height: 600px;
+  width: 750px;
+  display: inline-block;
+  border-radius: 7px;
+  border: 1px solid rgb(175, 175, 175);
+}
+
+.portfolio-desc2 {
+  display: inline-block;
+  width: 48%;
+  margin-top: 100px;
+}
+
+.portfolio-desc2 h1 {
+  border-bottom: 1px solid rgb(210, 210, 210);
+  padding: 20px;
+}
+
+.portfolio-desc2 p {
+  padding: 15px;
+  font-family: "Open Sans";
+  font-size: 22px;
+}
+
+.portfolio-pic2 {
+  width: 48%;
+  margin-top: 100px;
+  float: right;
+}
+
+.links {
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+}
+
+.links:hover {
+  color: rgb(28, 137, 246);
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1600px) {
+.portfolio {
+  margin-top: 30px;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  padding: 20px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.portfolio-section {
+  width: 95%;
+  margin: auto;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  height: 600px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.portfolio-desc1and3 {
+  margin-top: 100px;
+  float: none;
+  margin: auto;
+  width: 100%;
+}
+
+.portfolio-desc1and3 h1 {
+  border-bottom: 1px solid rgb(210, 210, 210);
+  padding: 20px;
+}
+
+.portfolio-desc1and3 p {
+  padding: 15px;
+  font-family: "Open Sans";
+  font-size: 22px;
+}
+
+.portfolio-pic1and3 {
+  display: block;
+  margin-top: 100px;
+  margin: auto;
+  width: 100%;
+}
+
+.demo-pic {
+  text-align: center;
+  height: 500px;
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+.portfolio-desc2 {
+  display: block;
+  float: none;
+  margin: auto;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.portfolio-pic2 {
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-top: 0px;
+  float: none;
+}
+}
+
+@media only screen and (max-width: 1470px) {
+.introLeft {
+  display: block;
+  width: 48%;
+  margin:auto;
+  margin-top: 80px;
+  border-right: none;
+  text-align: center;
+}
+
+.pic {
+  text-align: center;
+  height: 60%;
+  width: 60%;
+  margin-left: 6%;
+  margin-right: 5%;
+  display: inline-block;
+  border-radius: 7px;
+  border: 1px solid rgb(175, 175, 175);
+}
+
+.introRight {
+  font-size: 15px;
+  text-align: left;
+  display: block;
+  float: none;
+  margin:auto;
+  width: 80%;
+}
+
+.demo-pic {
+  height: 100%;
+}
+
+}
+
+@media only screen and (max-width: 1220px) {
+  .name {
+    display: none;
+  }
+
+  .drop-arrow {
+    color: black;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  ul {
+    display: none;
+    text-align: center;
+    float: none;
+  }
+
+  li {
+    float: none;
+    text-align: center;
+    padding: 15px;
+  }
+
+  li a {
+    float: none;
+    text-align: center;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .portfolio h2 {
+    font-size: 21px;
+  }
+
+  .demo-pic {
+    height: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 910px) {
+
+
+.demo-pic {
+    height: 300px;
+    width: 500px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.introRight h1 {
+  padding: 15px;
+  font-size: 25px;
+}
+
+.introRight p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.portfolio-desc1and3 p {
+  font-size: 20px;
+}
+
+.portfolio-desc2 p {
+  font-size: 20px;
+}
+
+.demo-pic {
+    height: 100%;
+    width:100%;
+}
+
+}
