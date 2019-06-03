@@ -11,6 +11,23 @@
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'MAMPB';
+        window['_fs_namespace'] = 'FS';
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
+            g = m[e] = function (a, b, s) { g.q ? g.q.push([a, b, s]) : g._api(a, b, s); }; g.q = [];
+            o = n.createElement(t); o.async = 1; o.crossOrigin = 'anonymous'; o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v, s) { g(l, { uid: i }, s); if (v) g(l, v, s) }; g.setUserVars = function (v, s) { g(l, v, s) }; g.event = function (i, v, s) { g('event', { n: i, p: v }, s) };
+            g.shutdown = function () { g("rec", !1) }; g.restart = function () { g("rec", !0) };
+            g.consent = function (a) { g("consent", !arguments.length || a) };
+            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+            g.clearUserCookie = function () { };
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+    </script>
 </head>
 
 <body>
@@ -43,7 +60,8 @@
                     <div class="portfolio-desc2">
                         <h1>Workout Plan</h1>
                         <p>Keep track of your progress in neat folders and see your progress visually with graphs!</p>
-                        <p>Workut Plan is a app that helps users keep track ofg their workouts in organized sessions.</p>
+                        <p>Workut Plan is a app that helps users keep track ofg their workouts in organized sessions.
+                        </p>
                         <p>Tech used: ReactJS, Redux, HTML, CSS, JavaScript, NodeJS, Express, Jest</p>
                         <p><a href="https://github.com/WHATommy/workout-plan" class="links">Github</a><a
                                 href="https://protected-eyrie-56416.herokuapp.com/" class="links">Demo</a></p>
